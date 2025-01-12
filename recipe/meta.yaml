@@ -1,5 +1,5 @@
 {% set name = "e3sm-tools" %}
-{% set version = "3.0.1" %}
+{% set version = "3.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/E3SM-Project/E3SM/archive/v{{ version }}.tar.gz
-    sha256: 91a515314da042932bf0610a0607c610e5bfeac43700dc64a4b49cb92b37184e
+    sha256: f307789973d5696175bccb3f1b35d9a326a94d45340aeeb1260938ad1d0a715c
     patches:
       - 0001-fix-boz-erros-in-mksurfdata_map-build.patch
 

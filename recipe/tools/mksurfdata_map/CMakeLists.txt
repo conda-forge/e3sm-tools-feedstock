@@ -22,6 +22,7 @@ set(MKSURFDATA_MAP_SRC ${SRC}/fileutils.F90
                        ${SRC}/mksoilphosphorusMod.F90
                        ${SRC}/mksurfdat.F90
                        ${SRC}/mktopostatsMod.F90
+                       ${SRC}/mktopradMod.F90
                        ${SRC}/mkurbanparCommonMod.F90
                        ${SRC}/mkurbanparMod.F90
                        ${SRC}/mkutilsMod.F90

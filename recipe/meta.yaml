@@ -1,5 +1,5 @@
 {% set name = "e3sm-tools" %}
-{% set version = "3.0.0" %}
+{% set version = "3.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,9 @@ package:
 
 source:
   - url: https://github.com/E3SM-Project/E3SM/archive/v{{ version }}.tar.gz
-    sha256: 5fae4c5c5e30099fae7500cf32cd77998e51bcda20ac4f170b3ad59dc44bb25c
+    sha256: 91a515314da042932bf0610a0607c610e5bfeac43700dc64a4b49cb92b37184e
     patches:
-      - 0001-fix-boz-erros-in-interpinic-build.patch
-      - 0002-fix-iargc-issue-in-interpinic-build.patch
-      - 0003-fix-boz-erros-in-mksurfdata_map-build.patch
+      - 0001-fix-boz-erros-in-mksurfdata_map-build.patch
 
 build:
   skip: true  # [not linux]

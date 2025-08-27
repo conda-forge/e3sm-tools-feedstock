@@ -13,7 +13,7 @@ source:
 
 build:
   skip: true  # [not linux]
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -23,15 +23,23 @@ requirements:
     - cmake
     - make
   host:
+    - python
     - libcurl
     - netcdf-fortran
     - netcdf-fortran * nompi_*
+  run:
+    - python
+    - numba
+    - numpy
+    - xarray
 
 test:
   commands:
     - test -f "${PREFIX}/bin/cube_to_target"
     - test -f "${PREFIX}/bin/interpinic"
     - test -f "${PREFIX}/bin/mksurfdata_map"
+    - generate_domain_files_E3SM.py --help
+    - mkatmsrffile.py --help
 
 about:
   home: https://e3sm.org

@@ -17,6 +17,6 @@ cmake --build .
 cmake --install .
 cd ..
 
-# install Python scripts
-cp tools/generate_domain_files/generate_domain_files_E3SM.py ${PREFIX}/bin
-cp components/eam/tools/mkatmsrffile/mkatmsrffile.py ${PREFIX}/bin
+# install Python scripts as executables for recipe tests/runtime use
+install -m 755 tools/generate_domain_files/generate_domain_files_E3SM.py ${PREFIX}/bin
+install -m 755 components/eam/tools/mkatmsrffile/mkatmsrffile.py ${PREFIX}/bin

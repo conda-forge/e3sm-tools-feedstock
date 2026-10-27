@@ -27,7 +27,6 @@ requirements:
     - make
   host:
     - python
-    - libcurl
     - netcdf-fortran
     - netcdf-fortran * nompi_*
   run:

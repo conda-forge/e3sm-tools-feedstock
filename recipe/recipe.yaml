@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: e3sm-tools
-  version: "3.1.0"
+  version: "3.2.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   - url: https://github.com/E3SM-Project/E3SM/archive/v${{ version }}.tar.gz
-    sha256: 51c68783413b5b35ba3bc81cca2b1ca5fd0f4ae5dfbae225a91b827af5ffef48
+    sha256: ab6b058f5b00070fb9b39aad996ec3d3e12b1bdebb6d99db86858cf3a5219885
     patches:
       - 0001-fix-boz-erros-in-mksurfdata_map-build.patch
 
